@@ -29,8 +29,8 @@ pipeline {
                         [
                             artifactId: 'prueba-dos', 
                             classifier: '', 
-                            file: "target/simple-app-${mavenPom.version}.war", 
-                            type: 'war'
+                            file: "prueba.txt", 
+                            type: 'txt'
                         ]
                         
                     ], 
