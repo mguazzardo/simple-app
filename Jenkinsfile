@@ -40,7 +40,7 @@ pipeline {
                     // Protocolo, si obvio
                     credentialsId: 'credentialsID', 
                     groupId: 'in.javahome', 
-                    nexusUrl: '192.168.0.90:8081', 
+                    nexusUrl: '192.168.0.190:8081', 
                     nexusVersion: 'nexus3', 
                     protocol: 'http', 
                     repository: 'repository-example', 
