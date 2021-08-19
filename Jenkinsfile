@@ -25,8 +25,19 @@ pipeline {
                             classifier: '', 
                             file: "target/simple-app-${mavenPom.version}.war", 
                             type: 'war'
+                        ],
+                        [
+                            artifactId: 'prueba-dos', 
+                            classifier: '', 
+                            file: "target/simple-app-${mavenPom.version}.war", 
+                            type: 'war'
                         ]
+                        
                     ], 
+                    // las credenciales, definirlas 
+                    // groupid, no se si influye
+                    // NexusURL, super importante
+                    // Protocolo, si obvio
                     credentialsId: 'credentialsID', 
                     groupId: 'in.javahome', 
                     nexusUrl: '192.168.0.90:8081', 
